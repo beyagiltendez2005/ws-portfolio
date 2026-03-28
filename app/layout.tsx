@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,13 +39,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col grow">
-            <header className="flex justify-between items-center py-4 px-4">
-              <h1 className="text-2xl font-bold">My Portfolio</h1>
+          <div className="flex flex-col min-h-screen max-w-5xl mx-auto px-6">
+            <header className="flex justify-between items-center py-8">
+              <Link href="/" className="text-xl font-black tracking-tighter hover:opacity-70 transition-opacity uppercase">
+                BG.
+              </Link>
               <Navigation />
             </header>
-            <Separator />
-            <main className="flex-grow p-4 relative">
+            <main className="flex-grow">
               {children}
             </main>
             <Footer />
