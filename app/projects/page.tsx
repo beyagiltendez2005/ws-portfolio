@@ -31,7 +31,7 @@ export default function Projects() {
               <div className="w-full h-48 bg-muted relative">
                 <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors" />
                 <span className="absolute inset-0 flex items-center justify-center text-xs font-mono text-muted-foreground/50 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-tighter">
-                  [Project Image Placeholder]
+                  
                 </span>
               </div>
               <CardHeader>
@@ -64,7 +64,7 @@ export default function Projects() {
                   href={project.link} 
                   className={cn(buttonVariants({ size: "sm" }), "rounded-full flex-1")}
                 >
-                  Case Study
+                  Link 
                 </Link>
                 <Link
                   href={project.sourceCode}

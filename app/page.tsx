@@ -41,16 +41,16 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: "Web Development",
-              desc: "Creating responsive and dynamic web applications using React and Next.js.",
+              title: "Login Act",
+              desc: "Webdev proj.",
             },
             {
-              title: "Embedded Systems",
-              desc: "Programming microcontrollers like ESP32 and Arduino for real-world tasks.",
+              title: "AppsDev",
+              desc: "using React.js & Next.js ",
             },
             {
-              title: "Technical Instruction",
-              desc: "Explaining complex technical concepts to diverse audiences clearly.",
+              title: "DogImage",
+              desc: "picture sa dog ",
             },
           ].map((item) => (
             <Card key={item.title} className="border-none bg-muted/30">

@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { experiences, skills } from "@/lib/data";
 import { MockupLabel } from "@/components/mockup-label";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -10,21 +11,23 @@ export default function About() {
       <section>
         <MockupLabel label="Professional Bio" />
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 items-start">
-          <div className="w-full aspect-square bg-muted rounded-2xl flex items-center justify-center border-4 border-muted-foreground/10 overflow-hidden">
-            <span className="text-muted-foreground text-sm font-mono">[Photo Placeholder]</span>
+          <div className="w-64 aspect-square bg-muted rounded-2xl flex items-center justify-center border-4 border-muted-foreground/10 overflow-hidden mx-auto md:mx-0">
+           <Image
+              src="/628907713_1442532234069099_4059335844340513279_n.jpg"
+              alt="portrait"
+              className="object-cover transition-transform duration-500 hover:scale-105"
+              priority
+              width={256}
+              height={256}
+            />
           </div>
           <div className="space-y-4">
             <h1 className="text-4xl font-bold">About Me</h1>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Early-career IT professional with hands-on experience in web
-              development and embedded systems, and a strong foundation in
-              programming fundamentals. Seeking development or instructional roles
-              focused on building and explaining real-world systems.
+             Hello! I’m an Information Technology student with a strong passion for building digital solutions and learning modern technologies. I specialize in web development and have experience working with HTML, CSS, JavaScript, PHP, and MySQL. I enjoy creating systems that are not only functional but also user-friendly and visually clean.
             </p>
             <p className="text-muted-foreground">
-              I enjoy solving complex problems at the intersection of hardware and software. 
-              Whether it's building an RFID-based attendance system or developing a high-performance 
-              Next.js application, I strive for clean code and intuitive user experiences.
+           I am a motivated learner who is always exploring new tools and frameworks to improve my skills. My goal is to become a professional developer who can create secure, efficient, and impactful applications that solve real problems.
             </p>
           </div>
         </div>
@@ -32,8 +35,8 @@ export default function About() {
 
       {/* SECTION: Experience Timeline */}
       <section>
-        <MockupLabel label="Experience Timeline" />
-        <h2 className="text-3xl font-bold mb-8">Work History</h2>
+        <MockupLabel label="Achievements & Certificate" />
+        <h2 className="text-3xl font-bold mb-8">Achievements & Certificate</h2>
         <div className="space-y-12 ml-4 border-l-2 border-muted-foreground/20 pl-8 relative">
           {experiences.map((exp, index) => (
             <div key={index} className="relative">

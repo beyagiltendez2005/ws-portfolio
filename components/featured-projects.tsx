@@ -23,7 +23,7 @@ export function FeaturedProjects() {
             className="flex flex-col group hover:shadow-xl transition-all border-muted/50 overflow-hidden rounded-3xl"
           >
             <div className="w-full h-48 bg-muted/50 flex items-center justify-center font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-              [Featured Image]
+              
             </div>
             <CardHeader className="space-y-4">
               <div className="flex justify-between items-start">

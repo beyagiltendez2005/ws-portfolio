@@ -50,14 +50,14 @@ export default function Contact() {
               <HugeiconsIcon icon={MailIcon} />
             </div>
             <h3 className="font-bold">Email</h3>
-            <p className="text-sm text-muted-foreground">bea@example.com</p>
+            <p className="text-sm text-muted-foreground">giltendezbea34@gmail.com</p>
           </div>
           <div className="p-6 rounded-2xl bg-muted/30 flex flex-col items-center text-center space-y-3">
             <div className="p-3 rounded-full bg-primary/10 text-primary">
               <HugeiconsIcon icon={MapsLocation01Icon} />
             </div>
             <h3 className="font-bold">Location</h3>
-            <p className="text-sm text-muted-foreground">Marigondon, Lapu-Lapu City</p>
+            <p className="text-sm text-muted-foreground">Cordova Cebu</p>
           </div>
           <div className="p-6 rounded-2xl bg-muted/30 flex flex-col items-center text-center space-y-3">
             <div className="p-3 rounded-full bg-primary/10 text-primary">
